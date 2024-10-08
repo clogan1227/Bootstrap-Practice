@@ -2,14 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cole's Bootstrap Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole's Bootstrap Project "Gorilla Coffee Tutorial"</title>
+
+    <!--STOPPED VIDEO AT 42:39-->
+
+    <!--Main css file and Bootstrap file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 <body>
-    <main>
-        <h1>Welcome to my Bootstrap project</h1>
-        <p>Let's all have a great time!</p>
-    </main>
+    <header class="header p-3 position-absolute start-0 top-0 end-0" style="background-color: black;">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="/" class="text-decoration-none text-white fs-5 fw-bold">Cole's Coffee</a>
+
+            <div>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+        
+        <div class="dropdown-nav__container container-xxl d-flex align-items-start align-items-md-center">
+            <div class="row align-items-start">
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="img/1-coffe-flavour.jpg" alt="Coffee Flavor" class="img-fluid" width="553" height="746" loading="lazy" />
+                        </div>
+                        <div class="col-10">
+                            <h3>Amazing flavor!</h3>
+                            <p>Find out more about our amazing flavor!</p>
+                            <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="img/2-health-benefits.jpg" alt="Surprising Benefits" class="img-fluid" width="553" height="746" loading="lazy" />
+                        </div>
+                        <div class="col-10">
+                            <h3>Surprising Benefits!</h3>
+                            <p>Find out more about our surprising benefits!</p>
+                            <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="img/3-essential-nutrients.jpg" alt="Essential Nutrients" class="img-fluid" width="553" height="746" loading="lazy" />
+                        </div>
+                        <div class="col-10">
+                            <h3>Essential Nutrients!</h3>
+                            <p>Find out more about our essential nutrients!</p>
+                            <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <button class="navbar-toggler dropdown-nav__closeNavBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </button>
+
+        </div>
+    </nav>
+
+    <!--30:38 in the video-->
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
